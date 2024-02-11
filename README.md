@@ -1,6 +1,8 @@
 
 # Hugeicons Elementor Plugin
 
+![Hugeicons library](https://cdn.hugeicons.com/blog/1707672477487-image.png)
+
 ## Description
 
 The Hugeicons Elementor Plugin is your gateway to a vast universe of icons, offering seamless access to over 27,000 icons in 7 distinctive styles. This plugin is meticulously designed to integrate with Elementor, allowing you to find, customize, and embed premium quality icons directly into your pages. Whether you're designing a website, creating a project in Figma, or developing an app, Hugeicons has the versatility to elevate your design work.
@@ -28,6 +30,15 @@ The Hugeicons Elementor Plugin is your gateway to a vast universe of icons, offe
 3.  Customize your selected icon using the sidebar options—adjust size, color, alignment, and more.
 4.  Insert the icon into your page with a single click.
 
+### Add as many icons as you want
+
+![](https://cdn.hugeicons.com/blog/1707672486872-image.png)
+
+### Choose preferred color and size
+![](https://cdn.hugeicons.com/blog/1707672471410-image.png)
+
+### Add link to your image, and adjust the alignment
+![](https://cdn.hugeicons.com/blog/1707672473731-image.png)
 ## Special Offer
 
 Unlock the full potential of Hugeicons with a 15% discount on our premium offering. Access the entire library of 27,000 icons and all 7 styles by visiting [our discount page](https://hugeicons.com/shop-discount).

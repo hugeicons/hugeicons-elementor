@@ -1,5 +1,5 @@
-=== Hugeicons Elementor Plugin ===
-Contributors: (your wordpress.org username)
+=== Hugeicons Elementor ===
+Contributors: hugeicons
 Tags: icons, elementor, widget, design, custom icons
 Requires at least: 5.0
 Tested up to: 5.8

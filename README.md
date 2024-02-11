@@ -30,15 +30,6 @@ The Hugeicons Elementor Plugin is your gateway to a vast universe of icons, offe
 3.  Customize your selected icon using the sidebar options—adjust size, color, alignment, and more.
 4.  Insert the icon into your page with a single click.
 
-### Add as many icons as you want
-
-![](https://cdn.hugeicons.com/blog/1707672486872-image.png)
-
-### Choose preferred color and size
-![](https://cdn.hugeicons.com/blog/1707672471410-image.png)
-
-### Add link to your image, and adjust the alignment
-![](https://cdn.hugeicons.com/blog/1707672473731-image.png)
 ## Special Offer
 
 Unlock the full potential of Hugeicons with a 15% discount on our premium offering. Access the entire library of 27,000 icons and all 7 styles by visiting [our discount page](https://hugeicons.com/shop-discount).

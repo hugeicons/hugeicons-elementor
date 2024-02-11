@@ -5,7 +5,7 @@
  * Plugin URI:  https://hugeicons.com
  * Version:     1.0.0
  * Author:      Hugeicons Team
- * Author URI:  https://hugeicons.com
+ * Author URI:  https://halallab.co
  * Text Domain: hugeicons-pro
  *
  * Elementor tested up to: 3.16.0

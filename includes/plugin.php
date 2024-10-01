@@ -281,47 +281,21 @@ final class Plugin
      * @return bool True if the license is valid, false otherwise.
      */
     public function validate_license($license) {
-        $api_url = 'https://api.gumroad.com/v2/licenses/verify';
-        $product_id = 'tPoKhqJgf5TBgS4zk5uXTQ=='; // Your product ID
+        $api_url = 'https://hugeicons.com/api/validate-license'; // Your API URL
 
-        // Prepare the data for the POST request
-        $body = array(
-            'product_id' => $product_id,
-            'license_key' => $license,
-        );
+        // Make the GET request
+        $response = wp_remote_get($api_url . "?license=$license");
 
-        // Make the POST request
-        $response = wp_remote_post($api_url, array(
-            'body' => $body,
-            'timeout' => 45,
-            'redirection' => 5,
-            'httpversion' => '1.0',
-            'blocking' => true,
-            'headers' => array(),
-            'cookies' => array()
-        ));
+        $body = wp_remote_retrieve_body( $response );
+        $body_content = json_decode( $body, true );
 
         // Handle errors
-        if (is_wp_error($response)) {
-            $error_message = $response->get_error_message();
-            // Log error or notify admin
-            // return new WP_Error('license_validation_failed', $error_message);
+        if (isset($body_content['message']) and $body_content['message'] == "Invalid license") {
             return false;
         }
 
-        // Decode the response
-        $response_body = wp_remote_retrieve_body($response);
-        $result = json_decode($response_body);
-
-        // Check if the request was successful
-        if (isset($result->success) && $result->success === true) {
-            // License is valid
-            return true;
-        }
-
-        // License is not valid or request failed
-        // Handle this case as needed (log error, show message, etc.)
-        return false;
+        // License is valid
+        return true;
     }
 
     /**

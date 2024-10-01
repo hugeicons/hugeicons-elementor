@@ -136,9 +136,9 @@ final class Plugin
 
         $message = sprintf(
         /* translators: 1: Plugin name 2: Elementor */
-            esc_html__('"%1$s" requires "%2$s" to be installed and activated.', 'hugeicons-pro'),
-            '<strong>' . esc_html__('Hugeicons Pro', 'hugeicons-pro') . '</strong>',
-            '<strong>' . esc_html__('Elementor', 'hugeicons-pro') . '</strong>'
+            esc_html__('"%1$s" requires "%2$s" to be installed and activated.', 'hugeicons-elementor'),
+            '<strong>' . esc_html__('Hugeicons Pro', 'hugeicons-elementor') . '</strong>',
+            '<strong>' . esc_html__('Elementor', 'hugeicons-elementor') . '</strong>'
         );
 
         printf('<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message);
@@ -160,9 +160,9 @@ final class Plugin
 
         $message = sprintf(
         /* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
-            esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'hugeicons-pro'),
-            '<strong>' . esc_html__('Hugeicons Pro', 'hugeicons-pro') . '</strong>',
-            '<strong>' . esc_html__('Elementor', 'hugeicons-pro') . '</strong>',
+            esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'hugeicons-elementor'),
+            '<strong>' . esc_html__('Hugeicons Pro', 'hugeicons-elementor') . '</strong>',
+            '<strong>' . esc_html__('Elementor', 'hugeicons-elementor') . '</strong>',
             self::MINIMUM_ELEMENTOR_VERSION
         );
 
@@ -185,8 +185,8 @@ final class Plugin
 
         $message = sprintf(
         /* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-            esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'hugeicons-pro'),
-            '<strong>' . esc_html__('Hugeicons Pro', 'hugeicons-pro') . '</strong>',
+            esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'hugeicons-elementor'),
+            '<strong>' . esc_html__('Hugeicons Pro', 'hugeicons-elementor') . '</strong>',
             '<strong>' . esc_html__('PHP', 'hugeicons-pro') . '</strong>',
             self::MINIMUM_PHP_VERSION
         );

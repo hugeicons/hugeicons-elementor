@@ -359,6 +359,14 @@ final class Plugin
             [],
             self::VERSION
         );
+
+        wp_enqueue_script(
+            'hugeicons-faq-widget',
+            HUGEICONS_PRO_URL . 'assets/js/hugeicons-faq-widget.js',
+            ['jquery'],
+            self::VERSION,
+            true
+        );
     }
 
     /**
@@ -428,17 +436,19 @@ final class Plugin
     {
 
         require_once(__DIR__ . '/widgets/icon.php');
-//        require_once( __DIR__ . '/widgets/icon-box.php' );
-//        require_once( __DIR__ . '/widgets/icon-button.php' );
-//        require_once( __DIR__ . '/widgets/icon-list.php' );
+        require_once(__DIR__ . '/widgets/icon-box.php');
+        require_once(__DIR__ . '/widgets/icon-button.php');
+        require_once(__DIR__ . '/widgets/icon-list.php');
+        require_once(__DIR__ . '/widgets/faq.php');
 
         $license_key = get_option('hugeicons-license', '');
 
         if (!empty($license_key)) {
             $widgets_manager->register(new \Hugeicons_Icon_Widget());
-//        $widgets_manager->register( new Widget_Icon_Box() );
-//        $widgets_manager->register( new Widget_Icon_Button() );
-//        $widgets_manager->register( new Widget_Icon_List() );
+            $widgets_manager->register(new \Hugeicons_Icon_Box_Widget());
+            $widgets_manager->register(new \Hugeicons_Icon_Button_Widget());
+            $widgets_manager->register(new \Hugeicons_Icon_List_Widget());
+            $widgets_manager->register(new \Hugeicons_FAQ_Widget());
         }
 
     }

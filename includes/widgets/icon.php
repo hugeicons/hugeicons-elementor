@@ -52,7 +52,7 @@ class Hugeicons_Icon_Widget extends \Elementor\Widget_Base
      */
     public function get_icon()
     {
-        return 'hgi-hugeicons-logo';
+        return 'eicon-favorite';
     }
 
     /**
